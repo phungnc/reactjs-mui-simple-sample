@@ -3,27 +3,20 @@ import ReactDOM from 'react-dom';
 import {
   AppBar, 
   Paper,
-  Card, 
-  CardActions, 
-  CardHeader, 
-  CardMedia, 
-  CardTitle, 
-  CardText, 
+  Card, CardActions, CardHeader, CardMedia, CardTitle, CardText, 
   FlatButton
 } from 'material-ui';
 
-import {
-  MuiThemeProvider,
-  getMuiTheme
-} from 'material-ui/styles';
+import {MuiThemeProvider,getMuiTheme} from 'material-ui/styles';
 
+//http://www.material-ui.com/#/components/app-bar
 const AppBarExampleIcon = () => (
   <AppBar
     title="Title"
     iconClassNameRight="muidocs-icon-navigation-expand-more"
   />
 );
-
+//http://www.material-ui.com/#/components/paper
 const CardExampleWithAvatar = () => (
   <Card>
     <CardHeader
@@ -47,8 +40,7 @@ const CardExampleWithAvatar = () => (
     </CardActions>
   </Card>
 );
-
-
+//You make yourself an App: 
 const App = () => (
   <MuiThemeProvider muiTheme={getMuiTheme()}>
     <div>
@@ -65,5 +57,4 @@ const App = () => (
   </MuiThemeProvider>
 );
 
-
-ReactDOM.render(<App />, document.getElementById('app'));
+var RCom = ReactDOM.render(<App />, document.getElementById('app'));
